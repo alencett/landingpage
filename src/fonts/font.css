@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'DMSansItalic';
+    src: local('DMSansItalic'),
+         url('./fonts/DMSans-Italic.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'DMSansVariable';
+    src: local('DMSansVariable'),
+         url('./fonts/DMSans-Variable.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'LilitaOne';
+    src:url('./LilitaOne.ttf');
+}
+
+@font-face {
+    font-family: 'LuckiestGuy';
+    src: url('./LuckiestGuy.ttf');
+}

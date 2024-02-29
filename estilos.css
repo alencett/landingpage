@@ -1,0 +1,551 @@
+
+@font-face {
+    font-family: 'LilitaOne';
+    src:url('../src/fonts/LilitaOne.ttf');
+  }
+  
+  @font-face {
+    font-family: 'LuckiestGuy';
+    src: url('../src/fonts/LuckiestGuy.ttf');
+  }
+  
+  @font-face {
+    font-family: 'DMSansI';
+    src:url('../src/fonts/DMSans-Italic.ttf');
+  }
+  
+  @font-face {
+    font-family: 'DMSansV';
+    src: url('../src/fonts/DMSans-Variable.ttf');
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+}
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2em;
+    background-color: #4656F3;
+    color: #FFFFFF;
+    font-family: 'DMSansV';
+    height: 100px;
+}
+
+.categories {
+    display: inline-flex;
+    width: 90%;
+    
+}
+
+.ind-category1 {
+    margin-left: 22%;
+    margin-right: 1%;
+}
+
+.ind-category2 {
+    margin-left: 5%;
+}
+
+.ind-category3 {
+    margin-left: 22.5%;
+    
+}
+
+.ind-category4 {
+    margin-left: 10%;
+}
+
+.ind-category1,.ind-category2,.ind-category3,.ind-category4 {
+    background-color: #4656F3;
+    border: 0px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+ul {
+    display: inline-flex;
+}
+
+.smedia {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+}
+
+/* a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; } 
+
+a:active { text-decoration: none; } */
+
+@media (max-width: 1025px) {
+    
+    .ind-category3 {
+        margin-left: 8.5%;
+        
+    }
+    .ind-category1 {
+        margin-left: 20%;
+        margin-right: 4%;
+    }
+
+}
+
+@media (max-width: 931px) {
+    .ind-category4 {
+        margin-left: 2%;
+    }
+    
+    .ind-category3 {
+        margin-left: 12.5%;
+        
+    }
+    
+    .ind-category2 {
+        margin-left: 6%;
+    }
+    
+    .ind-category1 {
+        margin-left: 20%;
+        margin-right: 1%;
+    }
+
+}
+
+@media (max-width: 769px) {
+    .categories {
+    width: 100%;
+    }
+    .ind-category4 {
+        margin-left: 22%;
+    }
+    
+    .ind-category2 {
+        margin-left: 1%;
+    }
+    
+    .ind-category1 {
+        display: none;
+    }
+
+}
+
+@media (max-width: 435px) {
+    
+    .ind-category2 {
+        display: none;
+    }
+
+    .ind-category3 {
+        display: none;
+    }
+
+    .navBar {
+        height: 140px;
+    }
+    .categories {
+        text-align: center;
+    }
+
+    .ind-category4 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .smedia {
+       padding-left: 15px;
+       padding-right: 15px;
+    }
+}
+
+/* Now the CSS for the Home */
+
+.square-bg {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 520px;
+    width: 100%;
+    background-color: #FF5B00;
+    opacity: 1;
+    background-image:  repeating-linear-gradient(45deg, #FF9200 25%, transparent 25%, transparent 75%, #FF9200 75%, #FF9200), repeating-linear-gradient(45deg, #FF9200 25%, #FF5B00 25%, #FF5B00 75%, #FF9200 75%, #FF9200);
+    background-position: 0 0, 40px 40px;
+    background-size: 80px 80px;
+}
+
+.home-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background-color:#4656F3;
+    height: 100%;
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+    
+}
+
+.logofull {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+/* .baconweb {
+    width: 600px;
+    height: 450px;
+    z-index: 2;
+    position: relative;
+} */
+
+ .bacongif {
+    padding-top: 2em;
+    width: 650px;
+    height: 450px;
+    z-index: 2;
+    position: relative;
+} 
+
+.baconwhite {
+    padding-top: 30px;
+    width: 200px;
+    height: 200px;
+    
+}
+
+.tomato {
+    width: 150px;
+    height: 150px;
+    padding-right: 3%;
+    z-index: 2;
+    position: relative;
+}
+
+.minilogo {
+    width: 200px;
+    height: 150px;
+    padding-left: 3%;
+    z-index: 2;
+    position: relative;
+}
+
+.bluesquare {
+    z-index: 1;
+    background-color: #4656F3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 80%;
+    height: 60%;
+    border: 2px solid #f40909;
+    box-sizing: border-box; 
+    box-shadow: inset 0 0 3px #1c1b1b;
+}
+p {
+    color: honeydew;
+    font-family: 'LilitaOne';
+    font-size: 22px;
+    
+}
+
+h2 {
+    color: #FFD900;
+    font-family: 'LuckiestGuy';
+    font-size: 50px;
+    font-weight: lighter;
+    
+}
+
+
+.home-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background-color:#4656F3;
+    height: 100%;
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+    
+}
+p {
+    color: honeydew;
+    font-family: 'LilitaOne';
+    font-size: 22px;
+    
+}
+
+h2 {
+    color: #FFD900;
+    font-family: 'LuckiestGuy';
+    font-size: 50px;
+    font-weight: lighter;
+    
+}
+
+.btn {
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 0px #4568ad;
+    -moz-box-shadow: 3px 3px 0px #243454;
+    box-shadow: 3px 3px 0px #1c2e50;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #f18232;
+    padding: 15px 30px 15px 30px;
+    text-decoration: none;
+    font-family: 'LuckiestGuy';
+    font-weight: lighter;
+    font-size: 35px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+  
+  .btn:hover {
+    background: #ffffff;
+    color: #f18232;
+  }
+
+.btn {
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 0px #4568ad;
+    -moz-box-shadow: 3px 3px 0px #243454;
+    box-shadow: 3px 3px 0px #1c2e50;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #f18232;
+    padding: 15px 30px 15px 30px;
+    text-decoration: none;
+    font-family: 'LuckiestGuy';
+    font-weight: lighter;
+    font-size: 35px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+  
+  .btn:hover {
+    background: #f18232;
+    color: #FFD900;
+  }
+
+  @media (max-width: 1025px) {
+                    
+    .tomato {
+        padding-left: 0%;
+    }
+    
+    .minilogo {
+        padding-left: 0%;
+    }
+    
+}
+
+  @media (max-width: 931px) {
+    .tomato {
+        display: none;
+    }
+    
+    .minilogo {
+        display: none;
+        
+    }
+
+    .home-bg {
+        padding-left: 10%;
+        padding-right: 10%;
+        
+    }
+
+}
+
+@media (max-width: 435px) {
+    
+    .home-bg {
+        padding-left: 15px;
+        padding-right: 15px;
+        
+    }
+   /*  .baconweb {
+        width: 350px;
+        height: 220px;
+        z-index: 2;
+        position: relative;
+    } */
+
+    .bacongif {
+        width: 350px;
+        height: 230px;
+    }  
+
+
+
+}
+
+/* Finally the CSS for the Footer */
+
+.footer {
+    background:#FFD900;
+    color: #5f5f5f;
+    font-size: 14px;
+}
+
+.footer p {
+    color: #8a8a8a;
+}
+
+.footer h3 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+#h3-aparte {
+    margin-left: 2em;
+}
+
+.footer-col-1 {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.footer-col-2 {
+    flex-basis: 30%;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.footer-col-3 {
+    flex-basis: 30%;
+    text-align: center;
+    margin-right: 1em;
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-flex;
+      
+   
+}
+
+.smedia2 {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+}
+
+a {
+    color:#5f5f5f;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    
+}
+ .copyright {
+     text-align: center;
+ }
+
+ .logofull-footer {
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+ .row {
+        display: flex;
+        align-items: center;
+       
+    }
+    @media (max-width: 769px) {
+                    
+                    .copyright {
+                        padding-left: 2em;
+                    }
+                    .footer {
+                        padding-top: 15px;
+                        padding-bottom: 5px;
+                    }
+                    ul {
+                        padding-left: 0px;
+                        padding-right: 10%;
+                    }
+                }
+    @media (max-width: 705px) {
+            .footer {
+                padding-right: 2.2em;
+            }
+            
+            .logofull-footer {
+                width: 100%; 
+                max-width: 200px; 
+                height: auto; 
+                margin: 0 auto;
+            }
+
+            }
+    @media (max-width: 435px) {
+
+        .row {
+            display: block;
+            align-items: center;
+        }
+
+        ul {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .footer {
+            padding-right: 0px;
+        }
+    
+        .logofull-footer {
+            display: none;
+        }
+        .footer-col-1 {
+            display: none;
+        }
+        
+        .footer-col-2 {
+            display: none;
+        }
+        
+        .footer-col-3 {
+            text-align: center;
+            margin-right: 0em;
+        }
+
+        .smedia2 {
+            padding-left: 15px;
+            padding-right: 15px;
+         }
+            
+            }
