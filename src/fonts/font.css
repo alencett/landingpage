@@ -1,21 +1,24 @@
 @font-face {
-    font-family: 'DMSansItalic';
-    src: local('DMSansItalic'),
-         url('./fonts/DMSans-Italic.ttf') format('ttf');
+    font-family: 'MontserratBlack';
+    src: local('MontserratBlack'),
+         url('./fonts/Montserrat-Black.ttf') format('ttf');
 }
 
 @font-face {
-    font-family: 'DMSansVariable';
-    src: local('DMSansVariable'),
-         url('./fonts/DMSans-Variable.ttf') format('ttf');
+    font-family: 'MontserratBold';
+    src: local('MontserratBold'),
+         url('./fonts/MontserratBold.ttf') format('ttf');
 }
 
 @font-face {
-    font-family: 'LilitaOne';
-    src:url('./LilitaOne.ttf');
+    font-family: 'MontserratThin';
+    src: local('MontserratThin'),
+         url('./fonts/Montserrat-Thin.ttf') format('ttf');
 }
 
 @font-face {
-    font-family: 'LuckiestGuy';
-    src: url('./LuckiestGuy.ttf');
+    font-family: 'MontserratItalic';
+    src: local('MontserratItalic'),
+         url('./fonts/Montserrat-Italic.ttf') format('ttf');
 }
+
