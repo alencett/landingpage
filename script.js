@@ -12,17 +12,11 @@ roll.addEventListener('click', function(event) {
 
     // Show the detail section corresponding to the clicked photo
     let targetSectionId;
-    if (event.target.classList.contains('photoa')) {
+    if (event.target.closest('.roll-itema')) {
         targetSectionId = 'section4';
-    } else if (event.target.classList.contains('photob')) {
+    } else if (event.target.closest('.roll-itemb')) {
         targetSectionId = 'section5';
-    } else if (event.target.classList.contains('photoc')) {
-        targetSectionId = 'section6';
-    } else if (event.target.classList.contains('photod')) {
-        targetSectionId = 'section4';
-    } else if (event.target.classList.contains('photoe')) {
-        targetSectionId = 'section5';
-    } else if (event.target.classList.contains('photof')) {
+    } else if (event.target.closest('.roll-itemc')) {
         targetSectionId = 'section6';
     }
     // Add more conditions for other photos and sections as needed
